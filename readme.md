@@ -10,17 +10,17 @@ PHP objects are treated very similarly to JS object functions. However, the oper
 # Usage
 All of the following code snippets are syntactically correct:
 
-//$sel is an object
-$sel = new SELECT();
-$sel->select(distinct, arg1, arg2, ... arg_n);
+    //$sel is an object
+    $sel = new SELECT();
+    $sel->select(distinct, arg1, arg2, ... arg_n);
 
-//$sel is a string, and any more functions may not be called on it
-$sel = (new SELECT())->make_select(distinct, arg1, arg2, ... arg_n);
+    //$sel is a string, and any more functions may not be called on it
+    $sel = (new SELECT())->make_select(distinct, arg1, arg2, ... arg_n);
 
-//$sel is an object
-$sel = (new SELECT())->select(distinct, arg1, arg2, ... arg_n);
+    //$sel is an object
+    $sel = (new SELECT())->select(distinct, arg1, arg2, ... arg_n);
 
-//$sel is a string
-$sel = (new SELECT())->select(distinct, arg1, arg2, ... arg_n)->to_string();
+    //$sel is a string
+    $sel = (new SELECT())->select(distinct, arg1, arg2, ... arg_n)->to_string();
 
 Some improvements for output readability are needed.
